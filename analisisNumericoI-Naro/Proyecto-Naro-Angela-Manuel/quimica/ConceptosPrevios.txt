@@ -1,0 +1,43 @@
+Conceptos previos
+
+Estequiometría
+    Una ecuación química utiliza símbolos químicos para mostrar qué sucede durante una reacción química.
+    Se sigue el esquema
+
+    reactivos -> productos
+
+    Así, para una ecuación:
+    a*A + b*B -> c*C + d*D;
+    donde A, B, C, D son los elementos reactivos y a, b, c, d sus coeficientes respectivos.
+    La ecuación muestra que a unidades de masa del elemento A reaccionan con b unidades de masa del elemento B para formar o producir c unidades de masa del elemento C y d unidades de masa del elemento D.
+
+Equilibrio Químico
+
+    El equilibrio químico se alcanza cuando las rapideces de las reacciones en un sentido y en otro se igualan, y las concentraciones de los reactivos y productos permanecen constantes. En ese sentido, el equilibrio químico es un equilibrio dinámico.
+    Para el problema, el equilibrio químico que se analisará será el equilibrio homogéneo, que se aplica a las reacciones en las que todas las especies reactivas se encuentran en la misma fase. En nuestro caso, gaseoso.
+
+Constante de equilibrio
+
+    El equilibrio químico puede generalizarse con el siguiente modelo de reacción:
+    a*A(g) + b*B(g) <--> c*C(g) + d*D(g), a una temperatura T;
+    donde a, b, c, d son coeficientes estequiométricos de las especies reactivas A, B, C, D.
+
+    La Ley de acción de masa que establece que para una reacción reversible en equilibrio y a una temperatura constante, una relación determinada de concentraciones de reactivos y productos tiene un valor constante que es llamado constante de equilibrio.
+
+    Así, para una temperatura constante se cumple que:
+    K = ([C]^c * [D]^d)/ ([A]^a * [B]^b);
+    donde K es la constante de equilibrio y [X] indica la concentración de la especie X.
+
+    Para un equilibrio homogeneo gaseoso, se tomará en cuenta las presiones parciales de las especies reactivas.
+    Así, para nuestra ecuación tenemos:
+    Kp = (PC^c * PD^d) / (PA^a * PB^b);
+    donde PX indica la presión parcial de la especie X.
+
+    La reĺación entre ambas constantes de equilibrio está dada por:
+
+    Kp = K * (RT)^(c + d - a - b);
+    donde R es la constante universal de los gases ideales y T es la temperatura.
+
+
+Bibliografía
+    Chang, R.; Goldsby, K.. Química. 11ma Edición. 2013

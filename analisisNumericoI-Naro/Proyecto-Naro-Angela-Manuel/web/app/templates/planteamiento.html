@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    <pre id="dato">
+De los datos, tenemos la matriz de coeficientes:
+{{ posts['A'] }}
+La matriz de resultados será:
+{{ posts['b'] }}
+Al tener un sistema de 4 ecuaciones con 6 incógnitas, debemosencontrar 4 variables en función de otras dos variables(parámetros).
+Elegiremos a u y v como parámetros.
+
+Así, planteamos las siguientes ecuaciones:
+    x = x_1 * v + x_2 * w + x_3
+    y = y_1 * v + y_2 * w + y_3
+    z = z_1 * v + z_2 * w + z_3
+    u = u_1 * v + u_2 * w + u_3
+
+Así, tenemos los vectores
+    p_1 = (x_1, y_1, z_1, u_1)
+    p_2 = (x_3, y_3, z_3, u_3)
+    p_3 = (x_3, y_3, z_3, u_3)
+
+
+Dvidiremos nuestra matriz de codeficientes de manera que     A = [B|C], donde 
+B : 
+{{ posts['B'] }}
+C : 
+{{ posts['C'] }}
+En la ecuación inicial:
+B * p_1 + C * e_1 + B * x_2 + C * e_2 + B * p_3 = b
+De esta manera, conseguimos 3 sistemas con 4 ecuaciones y 4 incógnitas.
+Sistema 1:
+{{ posts['sistema1'] }}
+Sistema 2:
+{{ posts['sistema2'] }}
+Sistema 3: 
+{{ posts['sistema3'] }}
+
+        Escoja un método para solucionar los sistemas de ecuaciones.
+        1. Eliminación de Gauss     2. Factorización LU
+        3. Cholesky
+    </pre>
+<form action="" method="POST", name="metodo">
+    {{ form.hidden_tag() }}
+    <p>
+        {% for r in form %}
+            {{ r }}
+            {{ r.label }}
+        {% endfor %}
+        <input type="submit" name="submit   ">
+    </p>
+</form>
+    </p>
+
+</body>
+</html>

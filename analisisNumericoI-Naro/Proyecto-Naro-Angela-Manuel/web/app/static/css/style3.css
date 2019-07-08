@@ -1,0 +1,139 @@
+body{
+    background-image: url(https://raw.githubusercontent.com/AngelaSerrano/WebNumerico/master/gif2.gif);
+
+}
+.prgs{
+  /*Para centrar container.*/
+  font-family: "VT323";
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin: auto;
+   /*Tamaño,color container.*/
+  width: 90%;
+  height: 43px;
+  font-size: 40px;
+  color: white;
+
+   /*Centrar container.*/
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+
+}
+.prgs ul {
+  padding: 0px;
+  animation: up 10s 1 ;
+  animation-timing-function: linear;
+
+}
+li{
+  list-style: none;
+}
+@keyframes up {
+  0%,10% {
+        margin-top: 0px;
+  }
+  15%,25% {
+        margin-top: -40px;
+  }  
+  30%,40% {
+        margin-top: -80px;
+  }
+  45%,65% {
+        margin-top: -120px;
+  }
+  70%,90%{
+      margin-top: -160px;
+  }
+}
+
+.machine{
+  display:none;
+  border-radius: 10px;
+  padding: 10px;
+  background: black;
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  
+}
+.machine p {
+  
+  color: white;
+  float: left;
+  position: relative;
+  font-size: 30px;
+  font-family: "VT323";
+
+}
+.show{
+  display:table;
+}
+.hide{
+  display:none;
+}
+.machine p span{
+  position: absolute; 
+  right: 0;
+  width: 100%;
+  background: black;
+  border-left: 1px solid black;
+}
+
+#s1{
+    animation: maquina 5s 1 steps(81);
+		animation-delay: 10s;
+}
+
+#s2{
+  animation: maquina 5s 1 steps(100);
+  animation-delay: 15s;
+}
+#s3{
+    animation: maquina 5s 1 steps(83);
+		animation-delay: 20s;
+}
+
+#s4{
+  animation: maquina 5s 1 steps(72);
+  animation-delay: 25s;
+}
+#s5{
+    animation: maquina 5s 1 steps(85);
+		animation-delay: 30s;
+}
+
+#s6{
+  animation: maquina 5s 1 steps(70);
+  animation-delay: 35s;
+}
+#s7{
+    animation: maquina 5s 1 steps(65);
+	  animation-delay: 40s;
+}
+
+#s8{
+  animation: maquina 5s 1 steps(96);
+  animation-delay: 45s;
+}
+
+@keyframes maquina{
+  from{
+		
+    width:100%;
+  }
+  to{
+    width: 0;
+  }
+}
+
+

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <title>Solución</title>
+</head>
+<body>
+  <p>
+    <pre>
+Resultados del cómputo:
+      {% for post in posts %}
+La solución del {{ post.nombre }} es:
+{{ post.sistema.x }}
+Tiempo usado: {{ post.sistema.t }}
+      {% endfor %}
+
+Así, la solución parametrizada es:
+  x = -v - w + 50
+  y = 20
+  z = v + w
+  u = -v - w + 100
+
+Gracias.
+    </pre>
+  </p>
+
+</body>
+</html>
